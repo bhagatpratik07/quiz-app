@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const questions = [
     {
-      questionText: "What is the capital of France?",
+      questionText: "Q.1 What is the capital of France?",
       answerOptions: [
         { answerText: "New York", isCorrect: false },
         { answerText: "London", isCorrect: false },
@@ -13,7 +13,7 @@ function App() {
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText: "Q.2 Who is CEO of Tesla?",
       answerOptions: [
         { answerText: "Jeff Bezos", isCorrect: false },
         { answerText: "Elon Musk", isCorrect: true },
@@ -22,7 +22,7 @@ function App() {
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText: "Q.3 The iPhone was created by which company?",
       answerOptions: [
         { answerText: "Apple", isCorrect: true },
         { answerText: "Intel", isCorrect: false },
@@ -31,7 +31,7 @@ function App() {
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText: "Q.4 How many Harry Potter books are there?",
       answerOptions: [
         { answerText: "1", isCorrect: false },
         { answerText: "4", isCorrect: false },
@@ -68,7 +68,7 @@ function App() {
         </>
       ) : (
         <div>
-          <h1 className="heading">{questions[currentQuestion].questionText}</h1>
+          <h1>{questions[currentQuestion].questionText}</h1>
 
           <div className="answerButtonDiv">
             {questions[currentQuestion].answerOptions.map((answerOption) => (
